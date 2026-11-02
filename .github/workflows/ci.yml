@@ -71,7 +71,7 @@ jobs:
           install -Dm755 bin/Filtertool bin/flatpak-stage/bin/Filtertool
           install -Dm644 branding/logo.png bin/flatpak-stage/share/icons/hicolor/256x256/apps/io.github.mositho.filtertool-desktop.png
           install -Dm644 flatpak/io.github.mositho.filtertool-desktop.desktop bin/flatpak-stage/share/applications/io.github.mositho.filtertool-desktop.desktop
-          flatpak-builder --user --install-deps-from=flathub --force-clean --repo=bin/flatpak-repo bin/flatpak-build flatpak.yml
+          flatpak-builder --user --install-deps-from=flathub --default-branch=stable --force-clean --repo=bin/flatpak-repo bin/flatpak-build flatpak.yml
           flatpak build-bundle bin/flatpak-repo bin/Filtertool.flatpak io.github.mositho.filtertool-desktop stable --runtime-repo=https://dl.flathub.org/repo/flathub.flatpakrepo
       - name: Upload Linux Flatpak
         if: runner.os == 'Linux'
