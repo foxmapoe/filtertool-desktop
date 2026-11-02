@@ -1,6 +1,6 @@
 # Contributing
 
-Requires Go 1.26.10+ and Node.js 26 (see `.nvmrc`). Use `nvm install && nvm use`, or `fnm use --install-if-missing`, before installing dependencies. Windows desktop builds require Windows 10+ and WebView2. Linux desktop builds use GTK 3 and WebKitGTK 4.1; on Debian or Ubuntu install `libgtk-3-dev` and `libwebkit2gtk-4.1-dev` before building.
+Requires Go 1.26.10+ and Node.js 26 (see `.nvmrc`). Use `nvm install && nvm use`, or `fnm use --install-if-missing`, before installing dependencies. Windows desktop builds require Windows 10+ and WebView2. Linux desktop builds use GTK 4 and WebKitGTK 6.0; on Debian or Ubuntu install `libgtk-4-dev` and `libwebkitgtk-6.0-dev` before building.
 
 ```sh
 npm ci
